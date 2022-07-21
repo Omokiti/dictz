@@ -15,7 +15,7 @@ const getMeaning = () => {
   })
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      console.log(data,'datas');
       
       let details = document.querySelector('.word')
       let defz = document.querySelector('.defs')
@@ -29,14 +29,14 @@ const getMeaning = () => {
 
         info.forEach((result) => {
           defz.innerHTML += `
-      <li>
-      ${result.definition}  <br/>
-      <br/>
-      partOfSpeech: ${result.partOfSpeech} <br/>
-         <br/>
-      example:${result.examples} <br/>
-      <br/>
-      </li>
+      
+     <p> ${result.definition} </p> 
+     
+     <p> partOfSpeech: ${result.partOfSpeech} </p>
+        
+     <p> example:${result.examples} </p>
+     
+     
     
      `
 
