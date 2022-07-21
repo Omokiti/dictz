@@ -15,7 +15,6 @@ const getMeaning = () => {
   })
     .then(response => response.json())
     .then(data => {
-      console.log(data,'datas');
       
       let details = document.querySelector('.word')
       let defz = document.querySelector('.defs')
@@ -36,6 +35,7 @@ const getMeaning = () => {
         
      <p> example:${result.examples} </p>
      
+    
      
     
      `
